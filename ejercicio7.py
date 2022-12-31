@@ -2,13 +2,21 @@
 #Deberéis de definir los métodos para inicializar sus atributos, imprimirlos y mostrar un mensaje con el resultado de la nota y si ha aprobado o no.
 
 class alumno():
-    def mostrarnota(nombre, nota):
-        nombre = nombre
-        nota = nota
+    def atributos(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+    
+    def imprimir(self):
+        print("Nombre : ", self.nombre)
+        print("Nota : ", self.nota)
 
-        if nota > 5:
-            print(nombre, "haz aprovado")
+    def resultado(self):
+        if self.nota > 5:
+            print("Haz aprovado")
         else:
-            print(nombre, "No haz aprovado")
+            print("No haz aprovado")
 
-alumno.mostrarnota("Victor", 7)
+alumno1 = alumno()
+alumno1.atributos("Victor", 7)
+alumno1.imprimir()
+alumno1.resultado()
