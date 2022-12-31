@@ -8,15 +8,20 @@
 #Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por consola.
 
 class ejercicio():
-    color="Negro"
-    ruedas=4
-    puertas=4
+    def __init__(self, color, ruedas, puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
 
 class coche(ejercicio):
-    velocidad="180Km/h"
-    cilindrada="nose"
+    def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
 
-coche1=coche()
+coche1=coche("Verde", 4, 4, "180km/h", 1000)
 print("Color: ",coche1.color)
 print("Cantidad de ruedas: ", coche1.ruedas)
 print("Cantidad de puertas: ",coche1.puertas)
