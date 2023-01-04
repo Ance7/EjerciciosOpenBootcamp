@@ -2,6 +2,10 @@
 # Para ello, tendréis que acceder dos veces al archivo creado.
 
 f = open ('archivo.txt', 'w')
-f.write ("linea 1")
-f.close
+f.write ("linea 1 \n")
+f.close ()
 
+f = open ('archivo.txt', 'r+')
+f.readline()
+f.write ("linea 2")
+f.close ()
