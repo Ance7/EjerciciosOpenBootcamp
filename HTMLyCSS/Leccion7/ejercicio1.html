@@ -1,0 +1,66 @@
+<!-- Replica el ejercicio del vídeo 3 de esta sesión y realiza el siguiente cambio:
+Replícalo exactamente igual, pero realiza una nueva versión en modo oscuro
+Los colores serán los siguientes
+    El rosa se queda igual
+    El fondo blanco será sustituido por el color #161717
+    El fondo de los inputs tendrá un color #212121
+    El fondo de los inputs cuando se hace hover será del color #454045
+    Los textos tendrán un color blanc -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h3>Registrate en el formulario</h3>
+        <div class="botones">
+            <button class="boton-google">
+                <picture>
+                    <img src="https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png" alt="logo-google" />
+                </picture>
+                <span>Registrarse con Google</span>
+            </button>
+            <button class="boton-twitter">
+                <picture>T</picture>
+            </button>
+        </div>
+
+        <div class="separador">
+            <hr>
+            <span>O</span>
+            <hr>
+        </div>
+        <form action="" method="get">
+            <div class="inputs">
+                <label for="name">
+                    <span>Name</span>
+                    <input name="name" id="name">
+                </label>
+                <label for="username">
+                    <span>Username</span>
+                    <input name="username" id="username">
+                </label>
+            </div>
+            <label for="email">
+                <span>Email</span>
+                <input name="email" id="email">
+            </label>
+            <label for="password"> 
+                <span>Password</span>
+                <input name="password" id="password" placeholder="6+ caracteres">
+            </label>
+            <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <span>Acepto los terminos y condiciones</span>
+            </label>
+            <button type="submit" class="boton-submit">Crear cuenta</button>
+        </form>
+    </div>
+</body>
+</html>
