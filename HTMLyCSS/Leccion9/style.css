@@ -1,0 +1,14 @@
+.btn-modern {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    transition: all 0.4s;
+}
+
+.btn-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px rebeccapurple;
+    background-color: violet;
+    color: #000;
+}
