@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    background-color: burlywood;
+    font-weight: 700;
+    color: white;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    border: solid 1px white;
+}
+
+.principal {
+    flex-grow: 1;
+    padding: 20px;
+    border: solid 1px wheat;
+}
+
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .barra {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
