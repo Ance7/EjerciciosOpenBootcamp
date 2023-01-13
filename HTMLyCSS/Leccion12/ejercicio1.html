@@ -1,0 +1,75 @@
+<!--  Crea un nuevo documento HTML con el título "Elementos de Interés en Bootstrap"
+Utilizando la página oficial getboostrap.com, añade la última versión de Bootstrap a este documento HTML
+Crea tres secciones
+En la primera sección crea un Jumbotron replicando el que realizamos en el vídeo
+    El botón de llamada a la acción debe abrir una ventana modal
+En la segunda sección crea un formulario de contacto con los campos "nombre" (text), "teléfono" (number) y mensaje (textarea)
+En la tercera sección crea una tarjeta con tu perfil de desarrollador/a que contenga lo siguiente
+    Tu nombre en el título
+    Una breve descripción
+    Tu email en el footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de interes en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container py-4">
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Jumbotron</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-ejemplo">Boton</button>
+            </div>
+        </div>
+        
+        <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <h4 class="modal-header">Header</h4>
+                <div class="modal-body">
+                    <p>Body</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="p-4">
+        <form action="get">
+            <div>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre..." class="form-control">
+            </div>
+            <div>
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Tu telefono...">
+            </div>
+            <div>
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" type="text" placeholder="Tu mensaje..."></textarea>
+            </div>
+        </form>
+    </section>
+    <section class="p-4">
+        <div class="card" style="width: 17rem;">
+            <div class="card-body">
+                <h4 class="card-tittle">Anghelo Alva</h4>
+                <p class="card-text">Soy un estudiante de Ingenieria en Informatica que le gustaria aprender mas del mundo del desarrollo web</p>
+            </div>
+            <div class="card-footer">
+                <a href="anghelo.alva.q@gmail.com">anghelo.alva.q@gmail.com</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
